@@ -10,6 +10,6 @@ jobs:
   -name: Run checkout-sample
    uses: github/super-linter@v3
    env:
-    DEFAULT_BRANCH: main
+    DEFAULT_BRANCH: 001_Inital_Tigger
     GITHUB_TOKEN: ${(secrets.GITHUB_TOKEN)}
  
