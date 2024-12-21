@@ -1,0 +1,16 @@
+name: checkout-sample
+on: push
+jobs:
+ checkout:
+   name: Chekout Sample
+   runs-on: ubuntu-latest
+   steps:
+    -name: checkout
+     uses: action/chekout@v2
+  
+    -name: Run checkout-sample
+      uses: github/super-linter@v4
+      env:
+       DEFAULT_BRANCH: main
+       GITHUB_TOKEN: ${(secrets.GITHUB_TOKEN)}
+ 
